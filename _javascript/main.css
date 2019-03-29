@@ -1,0 +1,295 @@
+/*
+GERAL*/
+body {
+	font-family: "Open sans",Helvetica, Arial, sans-serif;
+	color: black;
+}
+h1, h2, h3 {
+	margin: 0;
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+}
+.botao {
+	color: #ffffff;
+	text-decoration: none;
+	padding: 10px 30px;
+	background-color: #636B6F;
+	font-size: .9em;
+	border-radius: 3px;
+
+}
+/* NAVEGACAO*/
+nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/projeto.jpg');
+}
+nav > a {
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	font-weight: 700;
+	font-size: 26px;
+	font-family: "Pacifico", serif;
+}
+nav  ul {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+nav ul li {
+	width: 100%;
+	text-align: center;
+}
+nav ul li a {
+	display: inline-block;
+	padding: 10px 0;
+	width: 100%;
+	text-decoration: none;
+	color: #1f1e1e;
+}
+header {
+	background-image: url('../_imagens/tec-fundo.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	color: #ebe7fd;
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	text-align: center;
+	padding: 20px;
+}
+header p {
+	margin-bottom: 2em;
+}
+/*SOBRE*/
+#sobre {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #636B6F;
+	padding: 0 20px 20px;
+	background-image: url('../_imagens/fundo.jpg');
+}
+#sobre p {
+	margin-bottom: 2.5em;
+	max-width: 1000px;
+}
+/*
+PROJETOS
+*/
+#projetos {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	color: #636B6F;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#projetos #arte {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/lapis.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 120px;
+	color: #000000;
+}
+#projetos #arte p {
+	text-align: center;
+	margin-top: 70px;
+}
+
+#projetos #game {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/game.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 120px;
+	color: #ffffff;
+}
+#projetos #game p {
+	text-align: center;
+	margin-top: 70px;
+}
+#projetos #tecno {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-image: url('../_imagens/tec-img.jpg');
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 120px;
+	color: #000000;
+}
+#projetos #tecno p {
+	text-align: center;
+	margin-top: 8px;
+}
+
+#projetos section {
+	margin-bottom: 10px;
+}
+/*
+GALERIA
+*/
+#galeria {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding-top: 20px;
+}
+#galeria h2 {
+	margin-bottom: 20px;
+}
+#galeria img {
+	margin-top: 2px;
+	width: 100%;
+}
+/*
+CADASTRO
+*/
+form {
+	width: 280px;
+	margin: auto;
+	background-color: #270d0db6;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	margin-top: 20px;
+	border-image-slice: unset;
+}
+	
+/*form h2 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	color: rgb(2, 4, 27);
+	padding-top: 20px;
+}
+//display: flex;
+	flex-direction: column;
+	width: 450px;
+	align-items: center;
+	background-color: #309AAB;
+	margin-top: 20px;
+	margin: auto;//
+
+form h4 {
+	font-family: 'Roboto', Helvetica, Arial, sans-serif;
+	color: rgb(2, 4, 27);
+}
+form input {
+	padding: 0px;
+	margin: 0px;
+}*/
+
+/*
+CONTATO
+*/
+#contato {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 15px;
+}
+footer {
+	text-align: center;
+	padding: 10px;
+	background-color: #636B6F;
+	width: 100%;
+}
+footer p {
+	padding: 2px;
+	margin: 0px;
+}
+/*
+MIDEA QUERIES
+*/
+@media screen and (min-width: 768px) {
+	/*
+	NAVEGACAO
+	*/
+	nav {
+		flex-direction: row;
+		justify-content: space-around;	
+	}
+	nav ul {
+		flex-direction: row;
+		width: 70%;
+	}
+	/*
+	CABEÇALHO
+	*/
+	header {
+		height: 600px;
+		height: 100vh;
+		justify-content: center;
+	}
+	#sobre {
+		height: 400px;
+		height: 30vh;
+		justify-content: center;
+		min-height: 250px;
+	}
+	/*
+	PROJETOS
+	*/
+	#projetos {
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		max-width: 2000px;
+		margin: 0 auto;
+	}
+	#projetos h2 {
+		text-align: center;
+		width: 100%;
+	}
+	#projetos section {
+		flex-grow: 1;
+		flex-basis: 250px;
+		padding: 0 10px;
+		margin: 0 10px;
+		min-height: 250px;
+	}
+	#projetos section p {
+		text-align: center;
+		margin-top: 180px;
+	}
+	/*
+	GALERIA
+	*/
+	#galeria {
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	#galeria h2 {
+		text-align: center;
+		width: 100%;
+	}
+	#galeria img {
+		
+		width: 33%;
+		margin: 2px;
+	}
+	/*
+	CADASTRO
+	*/
+	form {
+		flex-direction: column;
+		align-items: left;
+	}
+}

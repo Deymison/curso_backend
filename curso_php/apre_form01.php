@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang=pr-br>
 <head>
+	<meta charset="utf-8">
 	<title>Aprndendo formularios</title>
 </head>
 <body>
