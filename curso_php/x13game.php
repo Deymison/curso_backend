@@ -1,9 +1,9 @@
 <?php
-if (@$_POST["iniciou"]!="S") {
+if ($_POST["iniciou"]!="S") {
     $sorteio=rand(1,100);
     $tentativa=0;
 }
-if (@$_POST["enviado"]=="S") {
+if ($_POST["enviado"]=="S") {
     $valor= $_POST["valor"];
     $sorteio=$_POST["sorteio"];
     $tentativa=$_POST["tentativa"];
